@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "electron src/index.js",
-    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\""
+    "package-win": "electron-packager . integracion-proyecto2 --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Integracion Proyecto 2\""
   },
   "devDependencies": {
     "electron": "^15.3.0",
