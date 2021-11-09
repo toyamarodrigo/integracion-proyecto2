@@ -36,34 +36,21 @@ app.on('ready', () => {
   });
 });
 
-// Template del menu de navegacion
-const templateMenu = [
-  {
-    label: 'File',
-    submenu: [
-      {
-        label: 'New Product',
-        accelerator: 'Ctrl+N',
-        click() {
-          createNewProductWindow();
-        },
-      },
-      {
-        label: 'Remove All Products',
-        click() {
-          mainWindow.webContents.send('product:remove-all');
-        },
-      },
-      {
-        label: 'Exit',
-        accelerator: process.platform === 'darwin' ? 'command+Q' : 'Ctrl+Q',
-        click() {
-          app.quit();
-        },
-      },
-    ],
-  },
-];
+// Template del menu de navegacion si es necesario
+// const templateMenu = [
+//   {
+//     label: 'File',
+//     submenu: [
+//       {
+//         label: 'Exit',
+//         accelerator: process.platform === 'darwin' ? 'command+Q' : 'Ctrl+Q',
+//         click() {
+//           app.quit();
+//         },
+//       },
+//     ],
+//   },
+// ];
 
 // Recarga de ventana + devtools
 if (process.env.NODE_ENV !== 'production') {
