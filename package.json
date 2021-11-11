@@ -1,18 +1,23 @@
 {
-  "name": "integracion-proyecto2",
+  "name": "videoplayer",
+  "productName": "TP2 Integracion Tecnologica - Philip Johnson y Rodrigo Toyama",
   "version": "1.0.0",
+  "description": "",
   "main": "src/index.js",
-  "license": "MIT",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron src/index.js",
-    "package-win": "electron-packager . integracion-proyecto2 --overwrite --asar --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Integracion Proyecto 2\""
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . TP2-Integracion-Tecnologica --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"TP2 Integracion Tecnologica - Philip Johnson y Rodrigo Toyama\"",    
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "author": "Philip Johnson y Rodrigo Toyama",
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "packager": "^0.1.9"
   },
   "devDependencies": {
-    "electron": "^15.3.0",
-    "electron-json-storage": "^4.5.0",
+    "electron": "^15.3.1",
     "electron-packager": "^15.4.0"
-  },
-  "dependencies": {
-    "electron-store": "^8.0.1"
   }
 }

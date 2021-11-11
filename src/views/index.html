@@ -1,25 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TP2 Integración Tecnológica - Philip Johnson, Rodrigo Toyama</title>
-  <link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>TP2 Integración Tecnológica - Philip Johnson, Rodrigo Toyama</title>
 </head>
-
 <body>
-  <div class="container p-4">
-    <div class="row" id="main">
-      <input type="file" accept="video/*" id="videoInput" />
-      <video width="320" height="240" controls id="myvideo" onplay="getTime()" onpause="stopInterval()">
-        <source type="video/mp4" />
-      </video>
-    </div>
-  </div>
-
-  <script src="index.script.js"></script>
+    <section>
+        <div class="row">
+            <div class="title">
+                <h2>Integración Tecnológica TP2</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div id="video_player">
+                <video controls id="main-Video" src=""></video>
+            </div>
+            <div class="playlistBx">
+                <div class="header">
+                    <div class="row">
+                        <span class="AllClases"></span>
+                    </div>
+                </div>
+                <ul class="playlist" id="playlist">
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="../video-list.js"></script>
+    <script src="../script.js"></script>
 </body>
-
 </html>
