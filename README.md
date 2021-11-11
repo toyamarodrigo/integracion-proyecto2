@@ -25,3 +25,8 @@ yarn start
 # Build
 yarn package-win
 ```
+
+## Screenshot
+
+Preview:
+![Preview](https://i.imgur.com/5qXKasc.png)
